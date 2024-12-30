@@ -33,7 +33,7 @@ const ProfilePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center space-x-6">
       {/* ********form here  */}
-      <div className="p-6 bg-white shadow-lg rounded-lg max-w-md">
+      <div className="p-6 bg-white rounded-lg max-w-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Add User</h2>
         <div className="mb-4">
           <label htmlFor="name" className="block text-lg text-gray-700">
