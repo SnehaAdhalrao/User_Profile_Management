@@ -32,8 +32,6 @@ const ProfilePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center space-x-6">
-      
-
       {/* ********form here  */}
       <div className="p-6 bg-white shadow-lg rounded-lg max-w-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Add User</h2>
@@ -83,7 +81,7 @@ const ProfilePage = () => {
 
       {/* ****Form ended here */}
       {/* **************************getting data by the setUseraction */}
-      
+
       {isProfileAdded || user.name ? (
         <div className="p-6 bg-white shadow-lg rounded-lg max-w-md">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
@@ -100,8 +98,7 @@ const ProfilePage = () => {
               <strong className="font-semibold">Age:</strong> {user.age}
             </p>
             <p className="text-lg text-gray-700 mb-4">
-              <strong className="font-semibold">Preferred Language:</strong>{' '}
-              {language}
+              <strong className="font-semibold"> Language:</strong> {language}
             </p>
             <button
               onClick={toggleLanguage}
@@ -119,7 +116,7 @@ const ProfilePage = () => {
         </div>
       ) : (
         <p className="text-gray-600 text-center">
-          No user data available. Please add user information.
+          User Unavailable here................
         </p>
       )}
     </div>
